@@ -1,0 +1,35 @@
+Algorithm for the given R code:
+
+1. Read the 'heart.csv' file using the read.csv() function and store it in a variable called 'data'.
+2. Use head() function to print the first few rows of the dataset.
+3. Use glimpse() function to get an overview of the dataset.
+4. Use ncol() function to get the number of columns and nrow() function to get the number of rows in the dataset.
+5. Use colnames() function to get the names of columns in the dataset.
+6. Use summary() function to get the summary of the dataset.
+7. Use the mutate() function to transform the data as follows:
+	a. Convert 'sex' column to character values 'MALE' and 'FEMALE' using if_else() function.
+	b. Convert 'fbs' column to character values '>120' and '<=120' using if_else() function.
+	c. Convert 'exang' column to character values 'YES' and 'NO' using if_else() function.
+	d. Convert 'cp' column to character values 'ATYPICAL ANGINA', 'NON-ANGINAL PAIN', and 'ASYMPTOMATIC' using if_else() function.
+	e. Convert 'restecg' column to character values 'NORMAL', 'ABNORMALITY', and 'PROBABLE OR DEFINITE' using if_else() function.
+	f. Convert 'slope', 'ca', and 'thal' columns to factor data types.
+	g. Convert 'target' column to character values 'YES' and 'NO' using if_else() function.
+	h. Convert all character columns to factor data types using mutate_if() function.
+	i. Use select() function to rearrange the columns of the transformed data.
+8. Use ggplot() function to create a bar graph to show the frequency of heart disease cases and non-cases in the transformed data.
+9. Use prop.table() function to compute the proportions of heart disease cases and non-cases in the transformed data.
+10.Use the group_by() and count() functions to count the frequency of age values in the transformed data.
+11.Use filter() function to select age values with frequency greater than 10.
+12.Use ggplot() function to create a bar graph to show the frequency of selected age values in the transformed data.
+13.Use ggplot() function to create a boxplot to compare blood pressure across the types of chest pain.
+14.Use the cor() function to compute the correlation matrix of the variables in the transformed data.
+15.Use corrplot() function to create a graphical representation of the correlation matrix.
+16.Use sum() function to count the number of missing values in the transformed data.
+17.Use createDataPartition() function to partition the data into training and testing sets with a 70:30 split.
+18.Use the train() function to train a logistic regression model on the training data and test it on the testing data.
+19.Use the predict() function to make predictions using the logistic regression model and calculate the AUC and accuracy values.
+20.Use the trainControl() function to set the parameters for training the SVM model.
+21.Use the train() function to train an SVM model on the training data and test it on the testing data.
+22.Use the predict() function to make predictions using the SVM model and calculate the AUC and accuracy values.
+23.Use the randomForest() function to train a random forest model on the training data and test it on the testing data.
+24.Use the predict() function to make predictions using the random forest model and calculate the AUC and accuracy values.
